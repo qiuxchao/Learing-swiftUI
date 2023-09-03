@@ -21,7 +21,11 @@ struct LandmarkRow: View {
             
             Spacer()
             
-            
+            // 是否收藏
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
