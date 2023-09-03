@@ -6,9 +6,15 @@
 //
 
 import Foundation
+import Combine
 
-// 从 JSON 中读取地标数组
-var landmarks: [Landmark] = load("landmarkData.json")
+// final 关键字：表示它是最终的，不能被继承或重写
+final class ModelData: ObservableObject {
+    // 从 JSON 中读取地标数组
+    // 可观察对象需要发布对其数据的任何更改，以便其订阅者可以获取更改。
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 
 // 从应用的主捆绑包中获取具有给定名称的 JSON 数据
 func load<T: Decodable>(_ filename: String) -> T {
