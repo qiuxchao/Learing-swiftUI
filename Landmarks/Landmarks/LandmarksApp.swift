@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct LandmarksApp: App {
+    // 相当于全局 Store
     @StateObject private var modelData = ModelData()
     
     var body: some Scene {
