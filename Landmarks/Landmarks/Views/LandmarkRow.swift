@@ -27,6 +27,7 @@ struct LandmarkRow: View {
 
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
+        // 使用 Group 渲染两个不同的视图
         Group {
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])

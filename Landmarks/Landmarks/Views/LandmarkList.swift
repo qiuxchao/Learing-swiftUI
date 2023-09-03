@@ -9,9 +9,9 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        List {
-            LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
+        // 动态渲染列表，列表结构有 Identifiable 协议时不需要指定第二个参数 id（唯一标识）
+        List(landmarks) { landmark in
+            LandmarkRow(landmark: landmark)
         }
     }
 }
