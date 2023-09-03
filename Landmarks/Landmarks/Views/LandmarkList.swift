@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     
     // 筛选后的列表
     var filteredLandmarks: [Landmark] {
-        landmarks.filter { landmark in
+        // 使用响应式数据
+        modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || landmark.isFavorite)
             
         }
@@ -42,12 +44,7 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        // 指定多个预览设备
-        ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
-                    LandmarkList()
-                        .previewDevice(PreviewDevice(rawValue: deviceName))
-                        .previewDisplayName(deviceName)
-                }
-
+        LandmarkList()
+            .environmentObject(ModelData())
     }
 }
