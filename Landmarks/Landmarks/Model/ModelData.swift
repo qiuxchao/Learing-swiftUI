@@ -8,7 +8,7 @@
 import Foundation
 
 // 从 JSON 中读取地标数组
-var landmark: [Landmark] = load("landmarkData.json")
+var landmarks: [Landmark] = load("landmarkData.json")
 
 // 从应用的主捆绑包中获取具有给定名称的 JSON 数据
 func load<T: Decodable>(_ filename: String) -> T {
