@@ -15,6 +15,7 @@
 		EA067CA82AD975A10028D80E /* c_dUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CA72AD975A10028D80E /* c_dUITests.swift */; };
 		EA067CAA2AD975A10028D80E /* c_dUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CA92AD975A10028D80E /* c_dUITestsLaunchTests.swift */; };
 		EA067CB72ADA6BC90028D80E /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CB62ADA6BC90028D80E /* Styles.swift */; };
+		EA067CBB2ADA78970028D80E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CBA2ADA78970028D80E /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		EA067CA72AD975A10028D80E /* c_dUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c_dUITests.swift; sourceTree = "<group>"; };
 		EA067CA92AD975A10028D80E /* c_dUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c_dUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA067CB62ADA6BC90028D80E /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		EA067CBA2ADA78970028D80E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				EA067C8C2AD975A00028D80E /* c_dApp.swift */,
 				EA067C8E2AD975A00028D80E /* ContentView.swift */,
+				EA067CBA2ADA78970028D80E /* AccountView.swift */,
 				EA067CB62ADA6BC90028D80E /* Styles.swift */,
 				EA067C902AD975A10028D80E /* Assets.xcassets */,
 				EA067C922AD975A10028D80E /* Preview Content */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA067CBB2ADA78970028D80E /* AccountView.swift in Sources */,
 				EA067CB72ADA6BC90028D80E /* Styles.swift in Sources */,
 				EA067C8F2AD975A00028D80E /* ContentView.swift in Sources */,
 				EA067C8D2AD975A00028D80E /* c_dApp.swift in Sources */,
