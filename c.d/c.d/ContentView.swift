@@ -15,9 +15,10 @@ struct ContentView: View {
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 26.0, height: 26.0)
-                .cornerRadius(20.0)
+                .cornerRadius(10)
                 .padding(9)
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .strokeStyle(cornerRadius: 16)
             
             Text("SwiftUI for IOS 16")
                 .font(.largeTitle)
@@ -43,18 +44,13 @@ struct ContentView: View {
         .padding(.vertical, 20)
         .frame(height: 350.0)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous)) // 这种方式会显示出溢出的内容
-//        .cornerRadius(30.0)
-//        .clipShape(Circle()) // 不能使用透明度等属性
-//        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous)) // 使用圆角矩形替代圆角属性，可以设置平滑的圆角，更加符合 iOS 的设计风格
+        //        .cornerRadius(30.0)
+        //        .clipShape(Circle()) // 不能使用透明度等属性
+        //        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous)) // 使用圆角矩形替代圆角属性，可以设置平滑的圆角，更加符合 iOS 的设计风格
         .shadow(color: Color("Shadow")
             .opacity(0.3), radius: 10, x: 0, y: 10)
-        .overlay(
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .stroke(
-                    .linearGradient(colors: [.white.opacity(0.3), .black.opacity(0.1)], startPoint: .top, endPoint: .bottom)
-                )
-                .blendMode(.overlay) // 混合模式，使边框与卡片融合
-        )
+        //        .modifier(StrokeStyle())
+        .strokeStyle()
         .padding(.horizontal, 20)
         .background(
             Image("Blob 1")
