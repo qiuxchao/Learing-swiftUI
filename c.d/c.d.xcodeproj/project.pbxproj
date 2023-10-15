@@ -17,6 +17,7 @@
 		EA067CB72ADA6BC90028D80E /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CB62ADA6BC90028D80E /* Styles.swift */; };
 		EA067CBB2ADA78970028D80E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CBA2ADA78970028D80E /* AccountView.swift */; };
 		EA067CBD2ADB88EA0028D80E /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CBC2ADB88EA0028D80E /* HexagonView.swift */; };
+		EA067CBF2ADB93860028D80E /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067CBE2ADB93860028D80E /* BlobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		EA067CB62ADA6BC90028D80E /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		EA067CBA2ADA78970028D80E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		EA067CBC2ADB88EA0028D80E /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		EA067CBE2ADB93860028D80E /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				EA067C8E2AD975A00028D80E /* ContentView.swift */,
 				EA067CBA2ADA78970028D80E /* AccountView.swift */,
 				EA067CBC2ADB88EA0028D80E /* HexagonView.swift */,
+				EA067CBE2ADB93860028D80E /* BlobView.swift */,
 				EA067CB62ADA6BC90028D80E /* Styles.swift */,
 				EA067C902AD975A10028D80E /* Assets.xcassets */,
 				EA067C922AD975A10028D80E /* Preview Content */,
@@ -269,6 +272,7 @@
 				EA067CBB2ADA78970028D80E /* AccountView.swift in Sources */,
 				EA067CBD2ADB88EA0028D80E /* HexagonView.swift in Sources */,
 				EA067CB72ADA6BC90028D80E /* Styles.swift in Sources */,
+				EA067CBF2ADB93860028D80E /* BlobView.swift in Sources */,
 				EA067C8F2AD975A00028D80E /* ContentView.swift in Sources */,
 				EA067C8D2AD975A00028D80E /* c_dApp.swift in Sources */,
 			);
