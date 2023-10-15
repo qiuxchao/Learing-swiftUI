@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BlobView: View {
+    // 当 TimelineView 中的内容出现时
+    @State var appear = false
+    
     var body: some View {
         // 使用 Shape 绘制
         //        BlobShape()
@@ -36,6 +39,13 @@ struct BlobView: View {
                 )
             }
             .frame(width: 400, height: 414)
+            .rotationEffect(.degrees(appear ? 360 : 0))
+        }
+        .onAppear {
+            // 旋转动画 每次持续20秒 总是循环 来回反转
+            withAnimation(.linear(duration: 20).repeatForever(autoreverses: true)) {
+                appear = true
+            }
         }
     }
     
